@@ -12,8 +12,7 @@ public:
         ListNode* slow=head;
         while(head->next){
             slow=slow->next;
-            head=head->next;
-            head=head->next;
+            head=head->next->next;
             if(head==NULL) break;
         }
         return slow;

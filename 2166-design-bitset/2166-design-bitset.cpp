@@ -22,9 +22,7 @@ public:
     }
     
     void flip() {
-        string temp=real;
-        real=flipped;
-        flipped=temp;
+        real.swap(flipped);
         cnt=real.size()-cnt;
     }
     

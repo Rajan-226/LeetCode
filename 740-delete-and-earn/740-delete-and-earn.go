@@ -28,7 +28,6 @@ func deleteAndEarn(nums []int) int {
         
         
         ans=max(ans,dp[i+2])
-        ans=max(dp[i],ans)
     }
     
     return ans
